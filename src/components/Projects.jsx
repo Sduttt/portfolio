@@ -1,8 +1,9 @@
-
+import Projbtn from "./Projbtn";
 function Projects(){
     return(
         <div className="">
             <h1 className="text-center font-zen text-3xl bold" id="project">TOP PROJECTS :</h1>
+            <Projbtn/>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto flex flex-wrap">
                     <div className="lg:w-2/3 mx-auto">
