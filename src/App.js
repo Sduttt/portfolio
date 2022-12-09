@@ -6,12 +6,15 @@ import Projects from './components/Projects';
 import './App.css';
 
 function App() {
+
+
   return (
     <>
       <Navbar/>
       <About/>
       <Skills/>
-      <Projects/>
+      <Projects {(count) => {count.count3 ? className = "bg-black" : className = "bg-gray"}} />
+      
     </>
 
   );
