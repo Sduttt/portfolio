@@ -13,7 +13,7 @@ function Skills(){
     return(
         <div className="my-6">
             <h1 className="text-center font-zen text-3xl bold ">SKILLS :</h1>
-            <div className="flex justify-center">
+            <div className="flex justify-center flex-wrap sm:flex-nowrap">
                 <Skillicon img={html} text="HTML" />
                 <Skillicon img={CSS} text="CSS" />
                 <Skillicon img={git} text="Git" />

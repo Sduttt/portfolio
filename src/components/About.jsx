@@ -3,9 +3,9 @@ import Button from './Buttons';
 
 function About(){
     return(
-        <div className="flex justify-around my-6 items-center">
+        <div className="flex justify-around my-6 items-center flex-col sm:flex-row ">
             <img src={Photo} alt='dp' className='w-80'/>
-            <section className='py-12 mr-14'>
+            <section className='py-12 sm:mr-14 text-center'>
                 <h1 className='font-zen text-3xl bold my-4'>SUBHAM DUTTA</h1>
                 <h2 className='font-zen text-base text-center semibold'>FRONTEND &nbsp; DEVELOPER</h2>
                 <h5 className='text-base text-center my-2 font-nav'>I 🖤 to code beautiful websites.</h5>

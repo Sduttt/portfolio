@@ -6,7 +6,7 @@ function Project(){
     console.log(Projectlist)
 
     return(
-        <div>
+        <div id="project">
             <h1 className="text-center font-zen text-3xl bold">PROJECTS:</h1>
             <div className="flex flex-wrap m-2 justify-center">
                 {
