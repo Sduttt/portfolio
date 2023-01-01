@@ -3,7 +3,7 @@ function Projitem({ title, live, github, img, tech }) {
     <div className="max-w-xl p-6 rounded-md shadow-md bg-gray-800 text-gray-50 m-2">
       <img src={img} alt="" className="object-cover object-center w-full rounded-md h-40 sm:h-72 dark:bg-gray-500"/>
       <div className="mt-6 mb-2">
-        <span className="block text-xs font-medium tracking-widest uppercase dark:text-blue-400">
+        <span className="block text-xs font-medium tracking-widest uppercase text-blue-400">
           {tech}
         </span>
         <h2 className="text-xl font-semibold tracking-wide">{title}</h2>

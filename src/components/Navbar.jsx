@@ -1,5 +1,5 @@
 import Navbtn from "./Navbtn";
-
+import Button from "./Buttons";
 import Logo from "./assets/logo-black.png";
 
 function Navbar() {
@@ -19,9 +19,9 @@ function Navbar() {
           />
         </button>
       </nav>
-      <nav className="flex sm:hidden p-4 flex items-center justify-between">
-      <img src={Logo} alt="Logo" className="w-32" />
-      <Navbtn url="https://sdutta.hashnode.dev/" text="BLOG" />
+      <nav className="flex sm:hidden p-4 flex items-center justify-between font-bold">
+        <img src={Logo} alt="Logo" className="w-32" />
+        <Button url="https://sdutta.hashnode.dev/" text="BLOG" />
       </nav>
     </>
   );
