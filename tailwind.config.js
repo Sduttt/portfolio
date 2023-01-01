@@ -4,6 +4,10 @@ module.exports = {
     "./src/**/*.{js,jsx}"
   ],
   theme: {
+    screens: {
+      "md": "770px",
+      "sm": "380px"
+    },
     fontFamily: {
       'zen': ['Zen Dots', 'cursive'],
       'body': ['Secular One', 'sans-serif'],
