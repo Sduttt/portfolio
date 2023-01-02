@@ -14,7 +14,7 @@ function Navbar() {
         <button>
           <Navbtn url="mailto:subhamdutta588@gmail.com" text="CONTACT ME" />
           <Navbtn
-            url="https://drive.google.com/file/d/1PNo88DEgvupf_GuNkbFVc1bmsjz42FHg/view?usp=sharing"
+            url="https://www.canva.com/design/DAFNyTHsrxM/ALKIElHB_CxCWcaAdPN-Aw/view?utm_content=DAFNyTHsrxM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
             text="RESUME"
           />
         </button>

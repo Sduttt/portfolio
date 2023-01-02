@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     screens: {
       "md": "770px",
-      "sm": "380px"
+      "sm": "420px"
     },
     fontFamily: {
       'zen': ['Zen Dots', 'cursive'],
