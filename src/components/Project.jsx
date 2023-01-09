@@ -3,7 +3,7 @@ import Projectlist from './assets/projlist.json';
 import Projitem from './Projitem'
 
 function Project(){
-    console.log(Projectlist)
+    // console.log(Projectlist)
 
     return(
         <div id="project">

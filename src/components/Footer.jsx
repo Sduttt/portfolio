@@ -3,11 +3,13 @@ import Logo from './assets/logo-black.png';
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { ImBlog } from 'react-icons/im';
+import Coffee from './assets/black-button.png'
 
 function Footer(){
     return(
         <div className="flex flex-col justify-center items-center">
-            <img src={Logo} alt="" className="w-40 mt-12" />
+            <img src={Logo} alt="" className="w-40 mt-4" />
+            <a href="https://www.buymeacoffee.com/sduttt" className="w-48 mb-4"> <img src={Coffee} alt="buymeacoffee" /> </a>
             <h2 className="font-zen">Living, Learning & Coding</h2>
             <h2 className="font-zen">Everyday...</h2>
             <div className="text-3xl my-2 flex">
