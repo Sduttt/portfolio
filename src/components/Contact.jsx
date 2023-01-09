@@ -3,8 +3,8 @@ function Contact() {
     <section className="text-gray-600 body-font relative" id="contact">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-            Contact Me
+          <h1 className="sm:text-3xl font-zen text-3xl bold text-black">
+            CONTACT ME :
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             Thank you for visiting my website! If you have any questions,
@@ -19,7 +19,6 @@ function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
-            onSubmit="submit"
             data-netlify-honeypot="bot-field">
             <div hidden>
               <input name="bot-field" />
@@ -35,7 +34,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required
                 />
               </div>
             </div>
@@ -51,6 +50,7 @@ function Contact() {
                   id="email"
                   name="email"
                   className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  required
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
               </div>
             </div>
             <div className="p-2 w-full">

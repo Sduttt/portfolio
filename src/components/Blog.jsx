@@ -39,7 +39,7 @@ function Blog() {
 
   return (
     <section className="" id="blog">
-      <h1 className="text-center font-zen text-3xl bold ">BLOG :</h1>
+      <h1 className="text-center font-zen text-3xl bold ">BLOG:</h1>
       <div className=" px-5 py-4 mx-auto">
         <p className="text-center font-bold text-xl text-[#172C45]">
           Latest Articles:{" "}
