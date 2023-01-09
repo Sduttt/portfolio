@@ -4,7 +4,7 @@ import { FaRegComment } from 'react-icons/fa'
 
 function Blogcard({title, brief, img, fullArticle, reaction, comment, date}) {
   return (
-    <div className="p-4 md:w-[450px]">
+    <div className="p-3 md:w-[430px]">
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-[#fafafa] hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:bg-[#fefefe]">
         <img
           className="md:h-56 w-full object-cover object-center"
