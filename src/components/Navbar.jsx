@@ -1,12 +1,15 @@
 import Navbtn from "./Navbtn";
 import React,{useState} from "react";
 import Logo from "./assets/logo-black.png";
+import wLogo from './assets/logo-white.png';
+import {CgMenuRight} from 'react-icons/cg'
 
 function Navbar() {
   const [isHidden, setIsHidden] = useState(true);
   const handleClick = () => {
     setIsHidden(!isHidden)
   }
+  const myTheme = document.documentElement.classList.value;
   return (
     <>
       <nav className="hidden sm:flex mx-2 sm:mx-16 font-nav flex justify-between sm:my-[-20px]">
@@ -14,7 +17,7 @@ function Navbar() {
           <Navbtn url="#blog" text="BLOG" />
           <Navbtn url="#project" text="PROJECTS" />
         </button>
-        <img src={Logo} alt="Logo" className="w-40" />
+        <img src={myTheme !== 'dark' ? Logo : wLogo} alt="Logo" className="w-40" />
         <button>
           <Navbtn url="#contact" text="CONTACT ME" />
           <Navbtn
@@ -28,20 +31,8 @@ function Navbar() {
 
         <div className="relative">
           {/* <!-- Dropdown toggle button --> */}
-          <button className="block p-2 bg-transparent bg-gray-100 rounded-md mt-[-25px]" onClick={handleClick}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
-              />
-            </svg>
+          <button className="block p-1 text-3xl dark:text-white bg-transparent bg-gray-100 rounded-md mt-[-25px]" onClick={handleClick}>
+          <CgMenuRight />
           </button>
 
           {/* <!-- Dropdown List --> */}

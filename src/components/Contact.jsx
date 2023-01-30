@@ -3,10 +3,10 @@ function Contact() {
     <section className="text-gray-600 body-font relative" id="contact">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
-          <h1 className="sm:text-3xl font-zen text-3xl bold text-black">
+          <h1 className="sm:text-3xl font-zen text-3xl bold text-black dark:text-white">
             CONTACT ME :
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base dark:text-slate-300">
             Thank you for visiting my website! If you have any questions,
             comments, or just want to say hello, please don't hesitate to
             contact me. I'd love to hear from you and will get back to you as
@@ -27,7 +27,7 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="name"
-                  className="leading-7 text-sm text-gray-600">
+                  className="leading-7 text-sm text-gray-600 dark:text-slate-300">
                   Name
                 </label>
                 <input
@@ -42,7 +42,7 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="email"
-                  className="leading-7 text-sm text-gray-600">
+                  className="leading-7 text-sm text-gray-600 dark:text-slate-300">
                   Email
                 </label>
                 <input
@@ -58,7 +58,7 @@ function Contact() {
               <div className="relative">
                 <label
                   htmlFor="message"
-                  className="leading-7 text-sm text-gray-600">
+                  className="leading-7 text-sm text-gray-600 dark:text-slate-300">
                   Message
                 </label>
                 <textarea
@@ -69,7 +69,7 @@ function Contact() {
             </div>
             <div className="p-2 w-full">
               <button
-                className="flex mx-auto px-6 py-1 hover:bg-transparent border-2 border-gray-900 hover:text-gray-900 text-lg rounded-lg transition-colors duration-300 transform bg-gray-900 text-gray-100 focus:border-4 focus:border-black"
+                className="flex mx-auto px-6 py-1 hover:bg-transparent border-2 border-gray-900 hover:text-gray-900 text-lg rounded-lg transition-colors duration-300 transform bg-gray-900 text-gray-100 focus:border-4 focus:border-black dark:border-[#50DBB4] dark:hover:bg-cyan-300 dark:hover:border-cyan-300 font-bold dark:bg-[#50DBB4] dark:text-gray-900"
                 type="submit">
                 Submit
               </button>

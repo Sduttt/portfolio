@@ -39,9 +39,9 @@ function Blog() {
 
   return (
     <section className="" id="blog">
-      <h1 className="text-center font-zen text-3xl bold ">BLOG:</h1>
+      <h1 className="text-center font-zen text-3xl bold dark:text-white">BLOG:</h1>
       <div className=" px-5 py-4 mx-auto">
-        <p className="text-center font-bold text-xl text-[#172C45]">
+        <p className="text-center font-bold text-xl text-[#172C45] dark:text-gray-300 ">
           Latest Articles:{" "}
         </p>
         <div className="flex flex-wrap justify-around">
@@ -63,7 +63,7 @@ function Blog() {
         </div>
         <div className="flex justify-center">
           <a
-            className="text-[#172C45] inline-flex items-center mx-auto mb-8 text-xl font-bold"
+            className="text-[#172C45] inline-flex items-center mx-auto mb-8 text-xl font-bold dark:text-gray-300"
             href="https://sdutta.hashnode.dev/">
             Read More Articles
             <svg

@@ -5,7 +5,7 @@ import { FaRegComment } from 'react-icons/fa'
 function Blogcard({title, brief, img, fullArticle, reaction, comment, date}) {
   return (
     <div className="p-3 md:w-[430px]">
-      <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden bg-[#fafafa] hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:bg-[#fefefe]">
+      <div className="h-full rounded-lg overflow-hidden bg-zinc-700 hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:bg-zinc-800">
         <img
           className="md:h-56 w-full object-cover object-center"
           src={img}
@@ -15,14 +15,14 @@ function Blogcard({title, brief, img, fullArticle, reaction, comment, date}) {
           <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
             {date.toLocaleDateString('en-GB', {day: '2-digit', month: '2-digit', year: 'numeric'})}
           </h2>
-          <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+          <h1 className="title-font text-lg font-medium text-gray-200 mb-3">
             {title}
           </h1>
-          <p className="leading-relaxed mb-3">
+          <p className="leading-relaxed text-gray-300 mb-3">
             {brief}
           </p>
           <div className="flex items-center justify-between flex-wrap ">
-            <a className="text-[#172C45] inline-flex items-center md:mb-2 lg:mb-0" href={fullArticle}>
+            <a className="text-slate-300 font-bold inline-flex items-center md:mb-2 lg:mb-0" href={fullArticle}>
               Learn More
               <svg
                 className="w-4 h-4 ml-2"

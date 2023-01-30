@@ -6,7 +6,7 @@ import { ImBlog } from "react-icons/im";
 
 function About() {
   return (
-    <div className="flex justify-around my-6 items-center flex-col sm:flex-row ">
+    <div className="flex justify-around my-6 items-center flex-col sm:flex-row dark:text-white">
       <img src={Photo} alt="dp" className="w-64 sm:w-80" />
       <section className="py-12 sm:mr-14 text-center">
         <h1 className="font-zen text-3xl bold my-4">SUBHAM DUTTA</h1>

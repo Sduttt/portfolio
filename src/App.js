@@ -22,10 +22,11 @@ function App() {
 
   const switchTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
+    console.log(document.documentElement.classList.value)
   };
 
   return (
-    <>
+    <div className="h-full w-full bg-[#f5f5f5] dark:bg-[#343B3E]">
       <Navbar />
       <About />
       <Skills />
@@ -40,10 +41,10 @@ function App() {
         <div
           className="text-3xl font-bold bg-zinc-200 dark:bg-gray-900 p-2 ml-2 rounded-full cursor-pointer dark:text-white text-black"
           onClick={switchTheme}>
-          {theme === "dark" ? <MdOutlineLightMode /> : <MdDarkMode />}
+          {theme !== "dark" ? <MdOutlineLightMode /> : <MdDarkMode />}
         </div>{" "}
       </div>
-    </>
+    </div>
   );
 }
 

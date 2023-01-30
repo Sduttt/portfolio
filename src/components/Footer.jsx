@@ -7,7 +7,7 @@ import Coffee from './assets/black-button.png'
 
 function Footer(){
     return(
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center dark:text-white">
             <img src={Logo} alt="" className="w-40 mt-4" />
             <a href="https://www.buymeacoffee.com/sduttt" className="w-48 mb-4"> <img src={Coffee} alt="buymeacoffee" /> </a>
             <h2 className="font-zen">Living, Learning & Coding</h2>
