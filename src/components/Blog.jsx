@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Blogcard from "./Blogcard";
 import axios from "axios";
+import buffering from './assets/loading.gif';
 const endpoint = "https://api.hashnode.com/";
 const ARTICLE_QUERY = `
 {
@@ -23,6 +24,7 @@ const ARTICLE_QUERY = `
 
 function Blog() {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     async function fetchData() {
       const response = await axios({
@@ -33,6 +35,7 @@ function Blog() {
         },
       });
       setPosts(response.data.data.user.publication.posts);
+      setLoading(false)
     }
     fetchData();
   }, []);
@@ -45,7 +48,7 @@ function Blog() {
           Latest Articles:{" "}
         </p>
         <div className="flex flex-wrap justify-around">
-          {posts.map((posts) => {
+          {loading ? <img src={buffering} alt="buffering" /> : posts.map((posts) => {
             const date = new Date(posts.dateAdded);
             return (
               <Blogcard
