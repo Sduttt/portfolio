@@ -22,18 +22,17 @@ function App() {
 
   const switchTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
-    console.log(document.documentElement.classList.value)
   };
 
   return (
     <div className="h-full w-full bg-[#f5f5f5] dark:bg-[#343B3E]">
-      <Navbar />
+      <Navbar theme={theme} />
       <About />
       <Skills />
       <Blog />
       <Project />
       <Contact />
-      <Footer />
+      <Footer theme={theme} />
       <div
         className="z-[100] fixed left-[0] bottom-[5%] bg-zinc-500 rounded-r-full p-1
     border-top-right-radius:50% border-bottom-right-radius:50%; ">

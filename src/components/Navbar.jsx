@@ -4,12 +4,11 @@ import Logo from "./assets/logo-black.png";
 import wLogo from './assets/logo-white.png';
 import {CgMenuRight} from 'react-icons/cg'
 
-function Navbar() {
+function Navbar({theme}) {
   const [isHidden, setIsHidden] = useState(true);
   const handleClick = () => {
     setIsHidden(!isHidden)
   }
-  const myTheme = document.documentElement.classList.value;
   return (
     <>
       <nav className="hidden sm:flex mx-2 sm:mx-16 font-nav flex justify-between sm:my-[-20px]">
@@ -17,7 +16,7 @@ function Navbar() {
           <Navbtn url="#blog" text="BLOG" />
           <Navbtn url="#project" text="PROJECTS" />
         </button>
-        <img src={myTheme !== 'dark' ? Logo : wLogo} alt="Logo" className="w-40" />
+        <img src={theme === 'dark' ? wLogo : Logo} alt="Logo" className="w-40" />
         <button>
           <Navbtn url="#contact" text="CONTACT ME" />
           <Navbtn
@@ -27,7 +26,7 @@ function Navbar() {
         </button>
       </nav>
       <nav className="flex sm:hidden p-4 flex items-center justify-between font-bold">
-      <img src={Logo} alt="Logo" className="w-32" />
+      <img src={theme === 'dark' ? wLogo : Logo} alt="Logo" className="w-32" />
 
         <div className="relative">
           {/* <!-- Dropdown toggle button --> */}
