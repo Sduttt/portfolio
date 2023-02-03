@@ -1,13 +1,14 @@
 import React from "react";
 import Projectlist from './assets/projlist.json';
-import Projitem from './Projitem'
+import Projitem from './Projitem';
+import 'animate.css'
 
 function Project(){
     // console.log(Projectlist)
 
     return(
         <div id="project">
-            <h1 className="text-center font-zen text-3xl bold dark:text-white">PROJECTS:</h1>
+            <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">PROJECTS:</h1>
             <div className="flex flex-wrap m-2 justify-center">
                 {
                     Projectlist.map((x) => {

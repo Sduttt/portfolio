@@ -1,3 +1,5 @@
+import 'animate.css';
+
 function Navbtn({ text, url }) {
   return (
     <a

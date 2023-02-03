@@ -1,10 +1,11 @@
 import React from "react";
 import { BiLike } from 'react-icons/bi';
-import { FaRegComment } from 'react-icons/fa'
+import { FaRegComment } from 'react-icons/fa';
+import 'animate.css';
 
 function Blogcard({title, brief, img, fullArticle, reaction, comment, date}) {
   return (
-    <div className="p-3 md:w-[430px]">
+    <div className="p-3 md:w-[430px] animate__animated animate__flipInY">
       <div className="h-full rounded-lg overflow-hidden bg-zinc-700 hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:bg-zinc-800">
         <img
           className="md:h-56 w-full object-cover object-center"

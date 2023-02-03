@@ -7,12 +7,13 @@ import js from './assets/icons8-javascript-50.svg'
 import tailwind from './assets/icons8-tailwindcss-50.svg'
 import react from './assets/icons8-react-50.svg'
 import loading from './assets/icons8-iphone-spinner.gif'
+import 'animate.css'
 
 
 function Skills(){
     return(
         <div className="my-6">
-            <h1 className="text-center font-zen text-3xl bold dark:text-white">SKILLS :</h1>
+            <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">SKILLS :</h1>
             <div className="flex justify-center flex-wrap sm:flex-nowrap mx-4">
                 <Skillicon img={html} text="HTML" />
                 <Skillicon img={CSS} text="CSS" />

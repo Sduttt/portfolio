@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Blogcard from "./Blogcard";
 import axios from "axios";
+import 'animate.css'
 import buffering from './assets/loading.gif';
 const endpoint = "https://api.hashnode.com/";
 const ARTICLE_QUERY = `
@@ -42,7 +43,7 @@ function Blog() {
 
   return (
     <section className="" id="blog">
-      <h1 className="text-center font-zen text-3xl bold dark:text-white">BLOG:</h1>
+      <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">BLOG:</h1>
       <div className=" px-5 py-4 mx-auto">
         <p className="text-center font-bold text-xl text-[#172C45] dark:text-gray-300 ">
           Latest Articles:{" "}

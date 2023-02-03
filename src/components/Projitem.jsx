@@ -1,6 +1,9 @@
+import React from "react";
+import 'animate.css'
+
 function Projitem({ title, live, github, img, tech }) {
   return (
-    <div className="max-w-xl p-6 rounded-md shadow-md bg-zinc-700 hover:bg-zinc-800 text-gray-50 m-2">
+    <div className="max-w-xl p-6 rounded-md shadow-md bg-zinc-700 hover:bg-zinc-800 text-gray-50 m-2 animate__animated animate__flipInY">
       <img src={img} alt="" className="object-cover object-center w-full rounded-md h-40 sm:h-72 dark:bg-gray-500"/>
       <div className="mt-6 mb-2">
         <span className="block text-xs font-medium tracking-widest uppercase text-blue-400">
