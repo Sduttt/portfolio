@@ -1,4 +1,4 @@
-import Photo from "./assets/dp.png";
+import Photo from "./assets/dpm.png";
 import Button from "./Buttons";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
