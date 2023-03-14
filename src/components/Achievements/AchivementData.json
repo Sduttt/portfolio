@@ -3,7 +3,7 @@
         "index": 0,
         "title": "ReactJS developer Bootcamp",
         "org": "LearnCodeOnline.in",
-        "img": "/home/subham/Study/portfolio/src/components/Achievements/Assets/reactLCO.png",
+        "img": "https://github.com/Sduttt/portfolio/blob/master/src/components/Achievements/Assets/Coursera%205YQ57EDJGQJ2-1.png?raw=true",
         "date": "14 / 03 / 2023",
         "Desc": "Certificate of completing React JS Bootcamp and passing all tests."
     },
@@ -39,5 +39,8 @@
         "date": "",
         "Desc": ""
     }
-    
 ]
+
+
+
+
