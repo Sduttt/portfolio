@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Blog from "./components/Blog";
 
 import "./App.css";
+import Achivements from "./components/Achivements";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -31,6 +32,7 @@ function App() {
       <Skills />
       <Blog />
       <Project />
+      <Achivements />
       <Contact />
       <Footer theme={theme} />
       <div
