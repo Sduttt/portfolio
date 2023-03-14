@@ -7,9 +7,11 @@ import {
   ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
+import AchivementCard from "./AchievementCard";
+import AchievementData from "./AchivementData.json";
 
 
-const Achivements = () => {
+const Achievements = () => {
   return (
     <div className="mt-10">
       <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">
@@ -22,9 +24,14 @@ const Achivements = () => {
           naturalSlideHeight={125}
           totalSlides={3}>
           <Slider>
-            <Slide index={0}>I am the first Slide.</Slide>
-            <Slide index={1}>I am the second Slide.</Slide>
-            <Slide index={2}>I am the third Slide.</Slide>
+            {AchievementData.map((item) => 
+              <Slide index={item.index}>
+                <AchivementCard title={item.title} img={item.img} desc={item.desc} />
+              </Slide>
+            )}
+            {/* <Slide index={0}><AchivementCard /> </Slide>
+            <Slide index={1}><AchivementCard /></Slide>
+            <Slide index={2}><AchivementCard /></Slide> */}
           </Slider>
           <ButtonBack>Back</ButtonBack>
           <ButtonNext>Next</ButtonNext>
@@ -34,4 +41,4 @@ const Achivements = () => {
   );
 };
 
-export default Achivements;
+export default Achievements;

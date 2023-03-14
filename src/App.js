@@ -7,9 +7,9 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
+import Achievements from "./components/Achievements/Achivements";
 
 import "./App.css";
-import Achivements from "./components/Achivements";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -32,7 +32,7 @@ function App() {
       <Skills />
       <Blog />
       <Project />
-      <Achivements />
+      <Achievements />
       <Contact />
       <Footer theme={theme} />
       <div
