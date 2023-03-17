@@ -25,8 +25,8 @@ function Navbar({ theme }) {
         <button className="animate__animated animate__bounceInRight">
           <Navbtn url="#contact" text="CONTACT ME" />
           <Navbtn
-            url="https://www.canva.com/design/DAFNyTHsrxM/ALKIElHB_CxCWcaAdPN-Aw/view?utm_content=DAFNyTHsrxM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-            text="RESUME"
+            url="#achievement"
+            text="ACHIEVEMENTS"
           />
         </button>
       </nav>

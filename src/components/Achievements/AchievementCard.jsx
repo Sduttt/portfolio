@@ -1,22 +1,38 @@
 import React from "react";
 
-const AchivementCard = ({title, org, img, date, desc }) => {
+const AchivementCard = ({ title, org, img, date, desc }) => {
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
-      <figure>
+    <section className="text-gray-600 body-font">
+      <div className="container mx-auto flex flex-col px-5 py-12 justify-center items-center">
+        <h1 className="title-font sm:text-4xl sm:text-2xl mb-4 font-medium text-gray-900 dark:text-gray-200">
+          {title}
+        </h1>
         <img
-          src={img}
+          className=" mb-4 sm:max-h-[500px] max-h-[200px] object-cover object-center rounded"
           alt={title}
+          src={img}
         />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">{title}</h2>
-        <p>{desc}</p>
-        {/* <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
-        </div> */}
+        <div className="flex text-gray-500 justify-center w-full text-xs sm:text-sm sm:mx-[-20px] flex-wrap">
+          <p className="mx-auto">
+            {" "}
+            <span className="dark:text-gray-400 text-gray-600"> Date: </span>
+            {date}{" "}
+          </p>{" "}
+          |
+          <p className="mx-auto">
+            <span className="text-gray-600 dark:text-gray-400">
+              Organization:
+            </span>{" "}
+            {org}{" "}
+          </p>
+        </div>
+        <div className="w-full md:w-2/3 flex flex-col mb-8 items-center text-center">
+          <p className="mb-8 leading-relaxed text-xs sm:text-xl dark:text-gray-400">
+            {desc}
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
