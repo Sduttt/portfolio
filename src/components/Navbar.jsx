@@ -23,11 +23,8 @@ function Navbar({ theme }) {
           className="w-40 animate__animated animate__bounce"
         />
         <button className="animate__animated animate__bounceInRight">
+          <Navbtn url="#achievement" text="ACHIEVEMENTS" />
           <Navbtn url="#contact" text="CONTACT ME" />
-          <Navbtn
-            url="#achievement"
-            text="ACHIEVEMENTS"
-          />
         </button>
       </nav>
       {/* For mobile */}
@@ -64,6 +61,11 @@ function Navbar({ theme }) {
               href="#project"
               className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
               PROJECTS
+            </a>
+            <a
+              href="#achievement"
+              className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
+              ACHIEVEMENT
             </a>
           </div>
         </div>

@@ -18,11 +18,9 @@ function Contact() {
             className="flex flex-wrap -m-2"
             name="contact"
             method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field">
-            <div hidden>
-              <input name="bot-field" />
-            </div>
+            netlify
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="p-2 w-1/2">
               <div className="relative">
                 <label
