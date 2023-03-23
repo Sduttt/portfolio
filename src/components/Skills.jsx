@@ -6,7 +6,7 @@ import bootstrap from './assets/icons8-bootstrap-50.svg'
 import js from './assets/icons8-javascript-50.svg'
 import tailwind from './assets/icons8-tailwindcss-50.svg'
 import react from './assets/icons8-react-50.svg'
-import firebase from './assets/icons8-firebase-48.png'
+import firebase from './assets/icons8-firebase-240.png'
 import loading from './assets/icons8-iphone-spinner.gif'
 import 'animate.css'
 

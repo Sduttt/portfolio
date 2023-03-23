@@ -1,5 +1,13 @@
 [
     {
+        "index": 8,
+        "title": "Full Stack JavaScript Web Developer",
+        "org": "iNeuron.ai",
+        "img": "https://github.com/Sduttt/portfolio/blob/master/src/components/Achievements/Assets/77a348c3-c649-4635-84c8-6f01c72683d6.png?raw=true",
+        "date": "March 2023",
+        "desc": "Certificate of completing the Full Stack JavaScript Web Developer Bootcamp."
+    },
+    {
         "index": 7,
         "title": "ReactJS developer Bootcamp",
         "org": "LearnCodeOnline.in",
