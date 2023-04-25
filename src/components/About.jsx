@@ -12,7 +12,7 @@ function About() {
       <section className="py-12 sm:mr-14 text-center animate__animated animate__fadeInRight">
         <h1 className="font-zen text-3xl bold my-4">SUBHAM DUTTA</h1>
         <h2 className="font-zen text-base text-center semibold">
-          FRONTEND &nbsp; DEVELOPER
+          FULL-STACK &nbsp; WEB &nbsp; DEVELOPER
         </h2>
         <h5 className="text-base text-center my-2 font-nav">
           I 🖤 to code beautiful websites.
@@ -55,7 +55,7 @@ function About() {
         <div className="flex justify-around my-6">
           <Button
             text="Resume"
-            url="https://www.canva.com/design/DAFNyTHsrxM/ALKIElHB_CxCWcaAdPN-Aw/view?utm_content=DAFNyTHsrxM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            url="https://resume.io/r/iDG1JQ03a"
             className="mx-4"
           />
           <Button

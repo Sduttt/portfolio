@@ -21,7 +21,7 @@ function Footer({theme}){
                 <a href="https://github.com/Sduttt" target="_blank" rel="noreferrer"><FaGithub className="mx-2 hover:text-[#24292E]" /> </a> 
                 <a href="https://sdutta.hashnode.dev/" target="_blank" rel="noreferrer"><ImBlog className="mx-2 hover:text-[#23d1e0]" /> </a> 
             </div>
-            <p className="my-3 text-center font-nav text-xs text-gray-700 dark:text-gray-300">Created by me ©Subham Dutta, 2023</p>
+            <p className="my-3 text-center font-nav text-xs text-gray-700 dark:text-gray-300">Created by me <a href="https://twitter.com/Subhamd88404337" target="_blank" rel="noreferrer">©Subham Dutta</a>, 2023</p>
         </div>
     )
 }

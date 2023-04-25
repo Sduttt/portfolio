@@ -1,11 +1,19 @@
 [
     {
-        "index": 8,
+        "index": 9,
         "title": "Full Stack JavaScript Web Developer",
         "org": "iNeuron.ai",
         "img": "https://github.com/Sduttt/portfolio/blob/master/src/components/Achievements/Assets/77a348c3-c649-4635-84c8-6f01c72683d6.png?raw=true",
         "date": "March 2023",
         "desc": "Certificate of completing the Full Stack JavaScript Web Developer Bootcamp."
+    },
+    {
+        "index": 8,
+        "title": "Pro Backend Developer",
+        "org": "LearnCodeOnline.in",
+        "img": "https://github.com/Sduttt/portfolio/blob/master/src/components/Achievements/Assets/Pro_Backend-1.png?raw=true",
+        "date": "April 2023",
+        "desc": "Certificate of completing the Pro Backend Developer course."
     },
     {
         "index": 7,
