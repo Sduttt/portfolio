@@ -10,6 +10,8 @@ import firebase from './assets/icons8-firebase-240.png'
 import nodejs from './assets/node-144.png'
 import expressjs from './assets/express-250.png'
 import mongodb from './assets/mongo-96.png'
+import java from './assets/icons8-java-240.png'
+import typescript from './assets/icons8-typescript-240.png'
 import loading from './assets/icons8-iphone-spinner.gif'
 import 'animate.css'
 
@@ -23,6 +25,7 @@ function Skills(){
                 <Skillicon img={CSS} text="CSS" />
                 <Skillicon img={git} text="Git" />
                 <Skillicon img={js} text="JavaScript" />
+                <Skillicon img={typescript} text="TypeScript" />
                 <Skillicon img={bootstrap} text="Bootstrap" />
                 <Skillicon img={tailwind} text="Tailwind CSS" />
                 <Skillicon img={react} text="React" />
@@ -30,7 +33,8 @@ function Skills(){
                 <Skillicon img={nodejs} text="Node.js" />
                 <Skillicon img={expressjs} text="Express.js" />
                 <Skillicon img={mongodb} text="Mongo DB" />
-                <Skillicon img={loading} text="Loading..." />
+                <Skillicon img={java} text="Java" />
+                <Skillicon img={loading} text="" />
 
             </div>
         </div>

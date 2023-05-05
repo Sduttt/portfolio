@@ -1,10 +1,10 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 
 const AchivementCard = ({ title, org, img, date, desc }) => {
   return (
     <section className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-col px-5 py-12 justify-center items-center">
-        <h1 className="title-font sm:text-4xl sm:text-2xl mb-4 font-medium text-gray-900 dark:text-gray-200">
+        <h1 className="md:text-2xl sm:text-xl font-zen text-center mb-4 text-gray-700 dark:text-gray-200">
           {title}
         </h1>
         <img
