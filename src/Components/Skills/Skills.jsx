@@ -6,7 +6,7 @@ import bootstrap from './assets/icons8-bootstrap-50.svg'
 import js from './assets/icons8-javascript-50.svg'
 import tailwind from './assets/icons8-tailwindcss-50.svg'
 import react from './assets/icons8-react-50.svg'
-import firebase from './assets/icons8-firebase-240.png'
+import nextjs from './assets/icons8-nextjs-144.png'
 import nodejs from './assets/node-144.png'
 import expressjs from './assets/express-250.png'
 import mongodb from './assets/mongo-96.png'
@@ -28,8 +28,8 @@ function Skills(){
                 <Skillicon img={typescript} text="TypeScript" />
                 <Skillicon img={bootstrap} text="Bootstrap" />
                 <Skillicon img={tailwind} text="Tailwind CSS" />
-                <Skillicon img={react} text="React" />
-                <Skillicon img={firebase} text="Firebase" />
+                <Skillicon img={react} text="React JS" />
+                <Skillicon img={nextjs} text="Next JS" />
                 <Skillicon img={nodejs} text="Node.js" />
                 <Skillicon img={expressjs} text="Express.js" />
                 <Skillicon img={mongodb} text="Mongo DB" />

@@ -55,7 +55,7 @@ function About() {
         <div className="flex justify-around my-6">
           <Button
             text="Resume"
-            url="https://resume.io/r/iDG1JQ03a"
+            url="https://www.canva.com/design/DAFRMDWAO1Y/9D00quF_UWYnPBri_MiPRg/view?utm_content=DAFRMDWAO1Y&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
             className="mx-4"
           />
           <Button
