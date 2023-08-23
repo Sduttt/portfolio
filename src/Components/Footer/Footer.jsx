@@ -18,13 +18,13 @@ function Footer({ theme }) {
             <h2 className="font-zen">Everyday...</h2>
             <div className="text-3xl my-2 flex">
                 <a href="https://www.facebook.com/profile.php?id=100073951804006" target="_blank" rel="noreferrer"><FaFacebook className="mx-2 hover:text-[#3b5998]" /> </a>
-                <a href="https://www.instagram.com/its_subham_dutta/" target="_blank" rel="noreferrer"><GrInstagram className="mx-2 hover:text-pink-600" /> </a>
-                <a href="https://twitter.com/Subhamd88404337" target="_blank" rel="noreferrer"><FaTwitter className="mx-2 hover:text-[#1DA1F2]" /></a>
-                <a href="https://www.linkedin.com/in/subham-dutta-8670b8178/" target="_blank" rel="noreferrer"><FaLinkedin className="mx-2 hover:text-[#0077B5]" /> </a>
+                <a href="https://www.instagram.com/sdutttttt" target="_blank" rel="noreferrer"><GrInstagram className="mx-2 hover:text-pink-600" /> </a>
+                <a href="https://twitter.com/sdutttttt" target="_blank" rel="noreferrer"><FaTwitter className="mx-2 hover:text-[#1DA1F2]" /></a>
+                <a href="https://www.linkedin.com/in/sduttt" target="_blank" rel="noreferrer"><FaLinkedin className="mx-2 hover:text-[#0077B5]" /> </a>
                 <a href="https://github.com/Sduttt" target="_blank" rel="noreferrer"><FaGithub className="mx-2 hover:text-[#24292E]" /> </a>
                 <a href="https://sdutta.hashnode.dev/" target="_blank" rel="noreferrer"><ImBlog className="mx-2 hover:text-[#23d1e0]" /> </a>
             </div>
-            <p className="my-3 text-center font-nav text-xs text-gray-700 dark:text-gray-300">Created by me <a href="https://twitter.com/Subhamd88404337" target="_blank" rel="noreferrer">©Subham Dutta</a>, 2023</p>
+            <p className="my-3 text-center font-nav text-xs text-gray-700 dark:text-gray-300">Created by me <a href="https://twitter.com/sdutttttt" target="_blank" rel="noreferrer">©Subham Dutta</a>, 2023</p>
         </div>
     )
 }
