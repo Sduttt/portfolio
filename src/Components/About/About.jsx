@@ -25,19 +25,19 @@ function About() {
             <FaFacebook className="mx-2 hover:text-[#3b5998]" />{" "}
           </a>
           <a
-            href="https://www.instagram.com/its_subham_dutta/"
+            href="https://www.instagram.com/sdutttttt"
             target="_blank"
             rel="noreferrer">
             <GrInstagram className="mx-2 hover:text-pink-600" />{" "}
           </a>
           <a
-            href="https://twitter.com/Subhamd88404337"
+            href="https://twitter.com/sdutttttt"
             target="_blank"
             rel="noreferrer">
             <FaTwitter className="mx-2 hover:text-[#1DA1F2]" />
           </a>
           <a
-            href="https://www.linkedin.com/in/subham-dutta-8670b8178/"
+            href="https://www.linkedin.com/in/sduttt"
             target="_blank"
             rel="noreferrer">
             <FaLinkedin className="mx-2 hover:text-[#0077B5]" />{" "}
