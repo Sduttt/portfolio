@@ -1,11 +1,19 @@
 [ 
     {
-        "index": 9,
+        "index": 10,
         "title": "Full Stack JavaScript Web Developer",
         "org": "iNeuron.ai",
         "img": "https://github.com/Sduttt/portfolio/blob/master/src/Components/Achievements/Assets/77a348c3-c649-4635-84c8-6f01c72683d6.png?raw=true",
         "date": "March 2023",
         "desc": "Certificate of completing the Full Stack JavaScript Web Developer Bootcamp."
+    },
+    {
+        "index": 9,
+        "title": "Mysql Bootcamp for beginners",
+        "org": "LearnCodeOnline.in",
+        "img": "https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/75112/6664661_75112.png",
+        "date": "September 2023",
+        "desc": "Certificate of completing the Mysql Bootcamp for beginners."
     },
     {
         "index": 8,

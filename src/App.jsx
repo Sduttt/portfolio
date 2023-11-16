@@ -9,6 +9,7 @@ import Blogs from './Pages/Blogs';
 import Projects from './Pages/Projects';
 import Achievements from './Pages/Achievements';
 import Contact from './Pages/Contact';
+import Private from './Pages/Private';
 import Error from './Pages/Error';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path='/projects' element={<Projects theme={theme} />} />
           <Route path='/achievements' element={<Achievements theme={theme} />} />
           <Route path='/contact' element={<Contact theme={theme} />} />
+          <Route path='/private' element={<Private theme={theme} />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>

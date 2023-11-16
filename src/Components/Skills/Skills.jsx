@@ -9,6 +9,8 @@ import react from './assets/icons8-react-50.svg'
 import nextjs from './assets/icons8-nextjs-144.png'
 import nodejs from './assets/node-144.png'
 import expressjs from './assets/express-250.png'
+import php from './assets/icons8-php-160.png'
+import sql from './assets/icons8-sql-60.png'
 import mongodb from './assets/mongo-96.png'
 import java from './assets/icons8-java-240.png'
 import typescript from './assets/icons8-typescript-240.png'
@@ -32,6 +34,8 @@ function Skills(){
                 <Skillicon img={nextjs} text="Next JS" />
                 <Skillicon img={nodejs} text="Node.js" />
                 <Skillicon img={expressjs} text="Express.js" />
+                <Skillicon img={php} text="PHP" />
+                <Skillicon img={sql} text="SQL" />
                 <Skillicon img={mongodb} text="Mongo DB" />
                 <Skillicon img={java} text="Java" />
                 <Skillicon img={loading} text="" />

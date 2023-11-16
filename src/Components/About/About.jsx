@@ -1,6 +1,7 @@
 import Photo from "../../assets/dpm.png";
 import Button from "../Button/Button";
-import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { RiTwitterXLine } from "react-icons/ri";
 import { GrInstagram } from "react-icons/gr";
 import { ImBlog } from "react-icons/im";
 import 'animate.css';
@@ -34,7 +35,7 @@ function About() {
             href="https://twitter.com/sdutttttt"
             target="_blank"
             rel="noreferrer">
-            <FaTwitter className="mx-2 hover:text-[#1DA1F2]" />
+            <RiTwitterXLine className="mx-2 hover:text-[#000]" />
           </a>
           <a
             href="https://www.linkedin.com/in/sduttt"
