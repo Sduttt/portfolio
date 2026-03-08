@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Secular+One&family=Zen+Dots&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Secular+One&family=Zen+Dots&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-zen: "Zen Dots", "cursive";
+  --font-body: "Secular One", "sans-serif";
+  --font-nav: "Michroma", "sans-serif";
+  --breakpoint-md: 770px;
+  --breakpoint-sm: 420px;
+}
+
+@variant dark (&:where(.dark, .dark *));

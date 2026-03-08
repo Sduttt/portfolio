@@ -31,7 +31,7 @@ function App() {
     <div className="min-h-screen w-full bg-[#f5f5f5] dark:bg-[#343B3E]">
       <BrowserRouter>
         <Routes>
-          <Route index path='/' element={<Home theme={theme} switchTheme={switchTheme} />} />
+          <Route path='/' element={<Home theme={theme} switchTheme={switchTheme} />} />
           <Route path='/blogs' element={<Blogs theme={theme} />} />
           <Route path='/projects' element={<Projects theme={theme} />} />
           <Route path='/achievements' element={<Achievements theme={theme} />} />
@@ -42,7 +42,7 @@ function App() {
       </BrowserRouter>
 
       <div
-        className="z-[100] fixed left-[0] bottom-[5%] bg-zinc-500 rounded-r-full p-1
+        className="z-100 fixed left-0 bottom-[5%] bg-zinc-500 rounded-r-full p-1
     border-top-right-radius:50% border-bottom-right-radius:50%; ">
         {" "}
         <div

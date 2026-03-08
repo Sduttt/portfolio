@@ -14,7 +14,7 @@ function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
   };
   return (
     <>
-      <nav className="hidden sm:flex mx-2 sm:mx-4 font-nav flex justify-between sm:my-[-20px]">
+      <nav className="hidden sm:flex mx-2 sm:mx-4 font-nav justify-between ">
         <button className=" animate__animated animate__bounceInLeft basis-1/3 justify-start">
           <Navbtn url={url1} text={text1} />
           <Navbtn url={url2} text={text2} />
@@ -34,7 +34,7 @@ function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
 
 
       {/* For mobile */}
-      <nav className="flex sm:hidden p-4 flex items-center justify-between font-bold">
+      <nav className="flex sm:hidden p-4 items-center justify-between font-bold">
         <Link to="/">
           <img
             src={theme === "dark" ? wLogo : bLogo}
@@ -46,14 +46,14 @@ function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
         <div className="relative">
           {/* <!-- Dropdown toggle button --> */}
           <button
-            className="block p-1 text-3xl dark:text-white bg-transparent bg-gray-100 rounded-md mt-[-25px]"
+            className="block p-1 text-3xl dark:text-white bg-transparent rounded-md -mt-6.25"
             onClick={handleClick}>
             <CgMenuRight />
           </button>
 
           {/* <!-- Dropdown List --> */}
           <div
-            className="absolute right-0 w-48 bg-white bg-gray-100 rounded-md shadow-xl z-10"
+            className="absolute right-0 w-48 bg-white rounded-md shadow-xl z-10"
             style={{ display: isHidden ? "none" : "block" }}>
             <Link
               to="/blogs"

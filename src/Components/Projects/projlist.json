@@ -1,13 +1,20 @@
 [
-    {"key": 10, "title": "Leave Manager", "tech": "PHP, SQL, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1700122196/myPortfolio/leaveManager_nuy33j.png", "github": "https://github.com/Sduttt/LeaveManager", "live": "https://leavemanagersduttt.azurewebsites.net/"},
-    {"key": 9, "title": "Photographers portfolio", "tech": "React, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1700123772/myPortfolio/Screenshot_20231116_140542_r6kmax.png", "live": "https://royedits.in/", "github": "/private"},
-    {"key": 8, "title": "Bookfinder", "tech": "React, Tailwind", "img": "https://findcoder.fra1.digitaloceanspaces.com/62e4c46d4e5c787df69bef82/projects/62e4c46d4e5c787df69bef821672559630192.jpeg", "live": "https://gybf-bookfinder.netlify.app/", "github": "https://github.com/Sduttt/bookfinder"},
-    {"key": 7, "title": "Developers Portfolio", "tech": "React", "img": "https://findcoder.fra1.digitaloceanspaces.com/62e4c46d4e5c787df69bef82/projects/62e4c46d4e5c787df69bef821670253986158.jpeg", "live": "https://firstreactapp-subham.netlify.app/", "github": "https://github.com/Sduttt/developers-portfolio"},
-    {"key": 6, "title": "Shopify Clone", "tech": "Tailwind", "img": "https://findcoder.fra1.digitaloceanspaces.com/62e4c46d4e5c787df69bef82/projects/62e4c46d4e5c787df69bef821662225905858.jpeg", "live": "https://shopify-clone-01.netlify.app/", "github": "https://github.com/Sduttt/shopify-clone"},
-    {"key": 5, "title": "Rode Clone", "tech": "Tailwind", "img": "https://findcoder.fra1.digitaloceanspaces.com/62e4c46d4e5c787df69bef82/projects/62e4c46d4e5c787df69bef821662222265438.jpeg", "live": "https://rode-clone2.netlify.app/", "github": "https://github.com/Sduttt/rode-clone"},
-    {"key": 4, "title": "Paytm Clone", "tech": "Tailwind", "img": "https://findcoder.fra1.digitaloceanspaces.com/62e4c46d4e5c787df69bef82/projects/62e4c46d4e5c787df69bef821662207928332.jpeg", "live": "https://paytm-clone-tailwind-subham.netlify.app/", "github": "https://github.com/Sduttt/paytm-tailwind"},
+    {"key": 9, "title": "TutoFind (Android)", "tech": "React Native CLI, Supabase, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772970053/myPortfolio/dd37e27b-4324-41b5-b147-a10cb5036d98.png", "github": "https://github.com/Sduttt/TutoFind", "live": "https://github.com/Sduttt/TutoFind/releases/tag/v1.0.2"},
+    
+    {"key": 8, "title": "MovieFlix (Android)", "tech": "React Native, Expo, Appwrite", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772981709/myPortfolio/Screenshot_from_2026-03-08_20-22-58_d1flai.png", "github": "https://github.com/Sduttt/MovieFlix-reactNative", "live": "/error"},
+
+    {"key": 7, "title": "Leave Manager", "tech": "PHP, SQL, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1700122196/myPortfolio/leaveManager_nuy33j.png", "github": "https://github.com/Sduttt/LeaveManager", "live": "https://leavemanagersduttt.azurewebsites.net/"},
+
+    {"key": 6, "title": "Photographers portfolio", "tech": "React, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1700123772/myPortfolio/Screenshot_20231116_140542_r6kmax.png", "live": "https://royedits.in/", "github": "/private"},
+
+    {"key": 5, "title": "Bookfinder", "tech": "React, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772969575/myPortfolio/Screenshot_from_2026-03-08_17-02-07_npc7ld.png", "live": "https://gybf-bookfinder.netlify.app/", "github": "https://github.com/Sduttt/bookfinder"},
+
+    {"key": 4, "title": "Developers Portfolio", "tech": "React", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772969742/myPortfolio/Screenshot_from_2026-03-08_17-05-29_c5cfyc.png", "live": "https://firstreactapp-subham.netlify.app/", "github": "https://github.com/Sduttt/developers-portfolio"},
+
     {"key": 3, "title": "Stopwatch", "tech": "Javascript, Tailwind", "img": "https://github.com/Sduttt/JS_Projects/raw/master/Images/stopwatch.png", "live": "https://subham-stopwatch.netlify.app/", "github": "https://github.com/Sduttt/JS_Projects/tree/master/Projects/12-stopwatch"},
+
     {"key": 2, "title": "Password Generator", "tech": "Javascript", "img": "https://github.com/Sduttt/JS_Projects/raw/master/Images/passGen.png", "live": "https://subhamspasswordmaker.netlify.app/", "github": "https://github.com/Sduttt/JS_Projects/blob/master/Projects/8-password-generator"},
+
     {"key": 1, "title": "Rock-Paper-Scissor", "tech": "Javascript", "img": "https://github.com/Sduttt/JS_Projects/raw/master/Images/rock-paper-scissor.png", "live": "https://subham-rock-paper-scissor.netlify.app/", "github": "https://github.com/Sduttt/JS_Projects/blob/master/Projects/7-RockPaperScissor"}
 
 ]

@@ -1,5 +1,13 @@
 [ 
     {
+        "index": 11,
+        "title": "React Native: Mobile App Development (CLI) [2026]",
+        "org": "Udemy",
+        "img": "https://udemy-certificate.s3.amazonaws.com/image/UC-4768965a-96c0-4940-8d14-91498ec24a26.jpg",
+        "date": "March 2026",
+        "desc": "Certificate of completing the React Native: Mobile App Development (CLI) [2026] Course."
+    },
+    {
         "index": 10,
         "title": "Full Stack JavaScript Web Developer",
         "org": "iNeuron.ai",
@@ -11,7 +19,7 @@
         "index": 9,
         "title": "Mysql Bootcamp for beginners",
         "org": "LearnCodeOnline.in",
-        "img": "https://s3-ap-southeast-1.amazonaws.com/learnyst/schools/2410/certificates/75112/6664661_75112.png",
+        "img": "https://github.com/Sduttt/portfolio/blob/master/src/Components/Achievements/Assets/sql.jpg?raw=true",
         "date": "September 2023",
         "desc": "Certificate of completing the Mysql Bootcamp for beginners."
     },

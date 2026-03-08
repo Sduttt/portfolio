@@ -13,10 +13,10 @@ function About() {
       <section className="py-12 sm:mr-14 text-center animate__animated animate__fadeInRight">
         <h1 className="font-zen text-3xl bold my-4">SUBHAM DUTTA</h1>
         <h2 className="font-zen text-base text-center semibold">
-          FULL-STACK &nbsp; WEB &nbsp; DEVELOPER
+          FRONT-END &nbsp; DEVELOPER
         </h2>
         <h5 className="text-base text-center my-2 font-nav">
-          I 🖤 to code beautiful websites.
+          I 🖤 to code beautiful applications.
         </h5>
         <div className="text-2xl justify-center sm:justify-around text-center mb-2 mt-4 flex">
           <a
@@ -35,7 +35,7 @@ function About() {
             href="https://twitter.com/sdutttttt"
             target="_blank"
             rel="noreferrer">
-            <RiTwitterXLine className="mx-2 hover:text-[#000]" />
+            <RiTwitterXLine className="mx-2 hover:text-black" />
           </a>
           <a
             href="https://www.linkedin.com/in/sduttt"
@@ -56,12 +56,12 @@ function About() {
         <div className="flex justify-around my-6">
           <Button
             text="Resume"
-            url="https://www.canva.com/design/DAFRMDWAO1Y/9D00quF_UWYnPBri_MiPRg/view?utm_content=DAFRMDWAO1Y&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel"
+            url="https://res.cloudinary.com/diytci0b8/image/upload/v1772973170/myPortfolio/Resume-fe_wdqjih.jpg"
             className="mx-4"
           />
           <Button
             text="Hire Me"
-            url="mailto:subhamdutta588@gmail.com"
+            url="/contact"
             className="mx-4"
           />
         </div>
