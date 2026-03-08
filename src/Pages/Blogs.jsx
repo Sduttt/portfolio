@@ -68,7 +68,7 @@ function Blogs({ theme }) {
                             const post = edge.node;
                             const date = new Date(post.publishedAt);
                             return (
-                                <div className="w-1/3 flex justify-center my-2">
+                                <div className="md:w-1/3 flex justify-center my-2">
                                 <Blogcard
                                     key={post.slug}
                                     title={post.title}

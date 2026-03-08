@@ -15,7 +15,7 @@ const AchivementCard = ({ title, org, img, date, desc, onOpen }) => {
               src={img}
             />
           </div>
-          <div className="p-4 flex flex-col flex-grow justify-between text-center">
+          <div className="p-4 flex flex-col grow justify-between text-center">
             <h1 className="text-lg sm:text-xl font-zen mb-2 text-gray-700 dark:text-gray-200">
               {title}
             </h1>

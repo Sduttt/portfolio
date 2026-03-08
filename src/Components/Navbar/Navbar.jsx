@@ -46,14 +46,14 @@ function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
         <div className="relative">
           {/* <!-- Dropdown toggle button --> */}
           <button
-            className="block p-1 text-3xl dark:text-white bg-transparent bg-gray-100 rounded-md mt-[-25px]"
+            className="block p-1 text-3xl dark:text-white bg-transparent rounded-md -mt-6.25"
             onClick={handleClick}>
             <CgMenuRight />
           </button>
 
           {/* <!-- Dropdown List --> */}
           <div
-            className="absolute right-0 w-48 bg-white bg-gray-100 rounded-md shadow-xl z-10"
+            className="absolute right-0 w-48 bg-white rounded-md shadow-xl z-10"
             style={{ display: isHidden ? "none" : "block" }}>
             <Link
               to="/blogs"

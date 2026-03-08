@@ -11,7 +11,7 @@ function Navbtn({ text, url }) {
       before:absolute
       before:block
       before:w-full
-      before:h-[2px] 
+      before:-h-0.5 
       before:bottom-0 
       before:left-0 
       before:bg-black 

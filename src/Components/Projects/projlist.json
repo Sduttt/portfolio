@@ -1,5 +1,7 @@
 [
-    {"key": 8, "title": "TutoFind (Android)", "tech": "React Native, Supabase, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772970053/myPortfolio/dd37e27b-4324-41b5-b147-a10cb5036d98.png", "github": "https://github.com/Sduttt/TutoFind", "live": "https://github.com/Sduttt/TutoFind/releases/tag/v1.0.2"},
+    {"key": 9, "title": "TutoFind (Android)", "tech": "React Native CLI, Supabase, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772970053/myPortfolio/dd37e27b-4324-41b5-b147-a10cb5036d98.png", "github": "https://github.com/Sduttt/TutoFind", "live": "https://github.com/Sduttt/TutoFind/releases/tag/v1.0.2"},
+    
+    {"key": 8, "title": "MovieFlix (Android)", "tech": "React Native, Expo, Appwrite", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1772981709/myPortfolio/Screenshot_from_2026-03-08_20-22-58_d1flai.png", "github": "https://github.com/Sduttt/MovieFlix-reactNative", "live": "/error"},
 
     {"key": 7, "title": "Leave Manager", "tech": "PHP, SQL, Tailwind", "img": "https://res.cloudinary.com/diytci0b8/image/upload/v1700122196/myPortfolio/leaveManager_nuy33j.png", "github": "https://github.com/Sduttt/LeaveManager", "live": "https://leavemanagersduttt.azurewebsites.net/"},
 
