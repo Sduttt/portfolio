@@ -42,7 +42,7 @@ function App() {
       </BrowserRouter>
 
       <div
-        className="z-[100] fixed left-[0] bottom-[5%] bg-zinc-500 rounded-r-full p-1
+        className="z-100 fixed left-0 bottom-[5%] bg-zinc-500 rounded-r-full p-1
     border-top-right-radius:50% border-bottom-right-radius:50%; ">
         {" "}
         <div

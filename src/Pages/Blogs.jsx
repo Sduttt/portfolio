@@ -6,24 +6,27 @@ import 'animate.css'
 import buffering from '../assets/loading.gif';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-const endpoint = "https://api.hashnode.com/";
+const endpoint = "https://gql.hashnode.com/";
 const ARTICLE_QUERY = `
-{
-  user(username: "sduttt") {
-      publication {
-        posts(page: 0) {
+query Publication {
+  publication(host: "sdutta.hashnode.dev") {
+    posts(first: 6) {
+      edges {
+        node {
           title
           brief
-          coverImage
-          responseCount
-          totalReactions
+          coverImage {
+            url
+          }
+          reactionCount
+          replyCount
           slug
-          dateAdded
+          publishedAt
         }
       }
     }
+  }
 }
-
 `;
 
 function Blogs({ theme }) {
@@ -38,7 +41,7 @@ function Blogs({ theme }) {
                     query: ARTICLE_QUERY,
                 },
             });
-            setPosts(response.data.data.user.publication.posts);
+            setPosts(response.data.data.publication.posts.edges);
             setLoading(false)
         }
         fetchData();
@@ -55,21 +58,30 @@ function Blogs({ theme }) {
                     <p className="text-center font-bold text-xl text-[#172C45] dark:text-gray-300 ">
                         Latest Articles:{" "}
                     </p>
-                    <div className="flex flex-wrap justify-around">
-                        {loading ? <img src={buffering} alt="buffering" /> : posts.map((posts) => {
-                            const date = new Date(posts.dateAdded);
+                    <div className="flex flex-wrap justify-between">
+                        {loading ?
+                        (
+                            <div className="w-full flex justify-center">
+                                <img src={buffering} alt="buffering" />
+                            </div>
+                        ) : posts.map((edge) => {
+                            const post = edge.node;
+                            const date = new Date(post.publishedAt);
                             return (
+                                <div className="w-1/3 flex justify-center my-2">
                                 <Blogcard
-                                    key={posts.slug}
-                                    title={posts.title}
-                                    brief={posts.brief}
-                                    img={posts.coverImage}
-                                    reaction={posts.totalReactions}
-                                    comment={posts.responseCount}
+                                    key={post.slug}
+                                    title={post.title}
+                                    brief={post.brief}
+                                    img={post.coverImage.url}
+                                    reaction={post.reactionCount}
+                                    comment={post.replyCount}
                                     date={date}
-                                    fullArticle={`https://sdutta.hashnode.dev/${posts.slug}`}
+                                    fullArticle={`https://sdutta.hashnode.dev/${post.slug}`}
                                 />
+                                </div>
                             );
+                        
                         })}
                     </div>
                     <div className="flex justify-center">

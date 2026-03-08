@@ -1,20 +1,22 @@
 /* eslint-disable react/prop-types */
-import {
-    CarouselProvider,
-    Slider,
-    Slide,
-    ButtonBack,
-    ButtonNext,
-} from "pure-react-carousel";
+
 import 'animate.css';
 import "pure-react-carousel/dist/react-carousel.es.css";
+import { useState, useEffect } from "react";
 import AchivementCard from "../Components/Achievements/AchievementCard";
 import AchievementData from "../Components/Achievements/AchivementData.json";
-import { GrPrevious, GrNext } from "react-icons/gr";
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
 
 const Achievements = ({theme}) => {
+    const [modalImg, setModalImg] = useState(null);
+
+    useEffect(() => {
+        const onKey = (e) => { if (e.key === 'Escape') setModalImg(null); };
+        window.addEventListener('keydown', onKey);
+        return () => window.removeEventListener('keydown', onKey);
+    }, []);
+
     return (
         <>
             <Navbar theme={theme} url1={"/"} text1={"home"} url2={"/blogs"} text2={"blogs"} url3={"/projects"} text3={"projects"} url4={"/contact"} text4={"contact"}  />
@@ -26,35 +28,36 @@ const Achievements = ({theme}) => {
 
 
                 <div className="container mx-auto animate__animated animate__bounceInDown">
-                    <CarouselProvider
-                        naturalSlideWidth={100}
-                        naturalSlideHeight={100}
-                        totalSlides={AchievementData.length}
-                        visibleSlides={1}
-                        className="relative">
-                        {/* TODO: Design the buttons at the disable state  */}
-
-                        <ButtonBack className="absolute left-[10px] md:left-[-80px] sm:left-[-45px] top-1/2 sm:top-[65%] md:top-[45%] transform -translate-y-1/2 bg-gray-300 dark:bg-gray-600 rounded-full p-2 md:p-4 z-30">
-                            <GrPrevious className="sm:w-6 sm:h-6 md:w-12 md:h-12 font-black" />
-                        </ButtonBack>
-                        <Slider className="">
-                            {AchievementData.map((item) => (
-                                <Slide index={item.index} key={item.index} className=''>
-                                    <AchivementCard
-                                        title={item.title}
-                                        img={item.img}
-                                        desc={item.desc}
-                                        date={item.date}
-                                        org={item.org}
-                                    />
-                                </Slide>
-                            ))}
-                        </Slider>
-                        <ButtonNext className="absolute right-[10px] sm:right-[-45px] md:right-[-80px] top-1/2 sm:top-[65%] md:top-[45%] transform -translate-y-1/2 bg-gray-300 dark:bg-gray-600 rounded-full p-2 md:p-4">
-                            <GrNext className="sm:w-6 sm:h-6 md:w-12 md:h-12 font-bold dark:text-slate-400 " />
-                        </ButtonNext>
-                    </CarouselProvider>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+                        {AchievementData.map((item, i) => (
+                            <div key={i} className="w-full h-full">
+                                <AchivementCard
+                                    title={item.title}
+                                    img={item.img}
+                                    desc={item.desc}
+                                    date={item.date}
+                                    org={item.org}
+                                    onOpen={() => setModalImg(item.img)}
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
+
+                {modalImg && (
+                    <div
+                        className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+                        onClick={() => setModalImg(null)}>
+                        <div className="relative max-w-full max-h-full" onClick={(e) => e.stopPropagation()}>
+                            <button
+                                className="absolute cursor-pointer top-2 right-2 text-white bg-black/40 rounded-full p-2 z-50"
+                                onClick={() => setModalImg(null)}>
+                                ✕
+                            </button>
+                            <img src={modalImg} alt="certificate" className="max-h-screen max-w-full object-contain rounded" />
+                        </div>
+                    </div>
+                )}
             </div>
             <Footer theme={theme} />
         </>
