@@ -6,7 +6,7 @@ import 'animate.css'
 import buffering from '../assets/loading.gif';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-const endpoint = "https://gql.hashnode.com/";
+
 const ARTICLE_QUERY = `
 query Publication {
   publication(host: "sdutta.hashnode.dev") {
@@ -34,15 +34,16 @@ function Blogs({ theme }) {
     const [loading, setLoading] = useState(true)
     useEffect(() => {
         async function fetchData() {
-            const response = await axios({
-                url: endpoint,
-                method: "POST",
-                data: {
+            try {
+                const response = await axios.post('/api/hashnode-proxy', {
                     query: ARTICLE_QUERY,
-                },
-            });
-            setPosts(response.data.data.publication.posts.edges);
-            setLoading(false)
+                });
+                setPosts(response.data.data.publication.posts.edges);
+            } catch (error) {
+                console.error('Failed to load blog posts:', error);
+            } finally {
+                setLoading(false);
+            }
         }
         fetchData();
     }, []);
