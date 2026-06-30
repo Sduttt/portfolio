@@ -13,7 +13,6 @@
     "@tailwindcss/postcss": "^4.3.2",
     "animate.css": "^4.1.1",
     "axios": "^1.18.1",
-    "netlify-cli": "^26.1.0",
     "pure-react-carousel": "^1.35.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
