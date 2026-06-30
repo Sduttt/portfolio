@@ -11,6 +11,7 @@ import Achievements from './Pages/Achievements';
 import Contact from './Pages/Contact';
 import Private from './Pages/Private';
 import Error from './Pages/Error';
+import Services from './Pages/Services';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path='/achievements' element={<Achievements theme={theme} />} />
           <Route path='/contact' element={<Contact theme={theme} />} />
           <Route path='/private' element={<Private theme={theme} />} />
+          <Route path='/services' element={<Services theme={theme} />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </BrowserRouter>

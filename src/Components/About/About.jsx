@@ -13,7 +13,7 @@ function About() {
       <section className="py-12 sm:mr-14 text-center animate__animated animate__fadeInRight">
         <h1 className="font-zen text-3xl bold my-4">SUBHAM DUTTA</h1>
         <h2 className="font-zen text-base text-center semibold">
-          FRONT-END &nbsp; DEVELOPER
+          FULL-STACK &nbsp; DEVELOPER
         </h2>
         <h5 className="text-base text-center my-2 font-nav">
           I 🖤 to code beautiful applications.

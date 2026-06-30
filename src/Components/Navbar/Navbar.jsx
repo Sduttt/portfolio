@@ -4,36 +4,63 @@ import bLogo from "../../assets/logo-black.png";
 import wLogo from "../../assets/logo-white.png";
 import { CgMenuRight } from "react-icons/cg";
 import "animate.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+
+const NAV_ITEMS = [
+  { url: "/", text: "Home" },
+  { url: "/services", text: "Services" },
+  { url: "/projects", text: "Projects" },
+  { url: "/achievements", text: "Achievements" },
+  { url: "/contact", text: "Contact" },
+  { url: "/blogs", text: "Blogs" },
+
+];
 
 // eslint-disable-next-line react/prop-types
-function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
+function Navbar({ theme }) {
   const [isHidden, setIsHidden] = useState(true);
+  const { pathname } = useLocation();
+
   const handleClick = () => {
     setIsHidden(!isHidden);
   };
+
   return (
     <>
-      <nav className="hidden sm:flex mx-2 sm:mx-4 font-nav justify-between ">
-        <button className=" animate__animated animate__bounceInLeft basis-1/3 justify-start">
-          <Navbtn url={url1} text={text1} />
-          <Navbtn url={url2} text={text2} />
-        </button>
-        <Link to="/">
+      {/* Desktop nav */}
+      <nav className="hidden sm:flex mx-2 sm:mx-6 font-nav justify-between items-center">
+        <div className="flex basis-2/5 justify-start">
+          {NAV_ITEMS.slice(0, 3).map(({ url, text }) => (
+            <Navbtn
+              key={url}
+              url={url}
+              text={text}
+              isActive={pathname === url}
+            />
+          ))}
+        </div>
+
+        <Link to="/" className="shrink-0">
           <img
             src={theme === "dark" ? wLogo : bLogo}
             alt="Logo"
-            className="w-36 sm:w-32 md:w-40 sm:mt-6 animate__animated animate__bounce"
+            className="w-36 sm:w-32 md:w-40 sm:mt-6 animate__animated animate__fadeIn"
           />
         </Link>
-        <button className="animate__animated animate__bounceInRight basis-1/3 justify-end">
-          <Navbtn url={url3} text={text3} />
-          <Navbtn url={url4} text={text4} />
-        </button>
+
+        <div className="flex basis-2/5 justify-end">
+          {NAV_ITEMS.slice(3).map(({ url, text }) => (
+            <Navbtn
+              key={url}
+              url={url}
+              text={text}
+              isActive={pathname === url}
+            />
+          ))}
+        </div>
       </nav>
 
-
-      {/* For mobile */}
+      {/* Mobile nav */}
       <nav className="flex sm:hidden p-4 items-center justify-between font-bold">
         <Link to="/">
           <img
@@ -44,37 +71,31 @@ function Navbar({ theme, url1, text1, url2, text2, url3, text3, url4, text4 }) {
         </Link>
 
         <div className="relative">
-          {/* <!-- Dropdown toggle button --> */}
           <button
             className="block p-1 text-3xl dark:text-white bg-transparent rounded-md -mt-6.25"
-            onClick={handleClick}>
+            onClick={handleClick}
+          >
             <CgMenuRight />
           </button>
 
-          {/* <!-- Dropdown List --> */}
           <div
             className="absolute right-0 w-48 bg-white rounded-md shadow-xl z-10"
-            style={{ display: isHidden ? "none" : "block" }}>
-            <Link
-              to="/blogs"
-              className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
-              BLOGS
-            </Link>
-            <Link
-              to="/contact"
-              className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
-              CONTACT ME
-            </Link>
-            <Link
-              to="/projects"
-              className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
-              PROJECTS
-            </Link>
-            <Link
-              to="/achievements"
-              className="block px-4 py-1 text-sm text-gray-700 hover:bg-gray-300 rounded hover:text-black">
-              ACHIEVEMENT
-            </Link>
+            style={{ display: isHidden ? "none" : "block" }}
+          >
+            {NAV_ITEMS.map(({ url, text }) => (
+              <Link
+                key={url}
+                to={url}
+                onClick={() => setIsHidden(true)}
+                className={`block px-4 py-1 text-sm rounded hover:bg-gray-300 hover:text-black ${
+                  pathname === url
+                    ? "text-black font-bold underline"
+                    : "text-gray-700"
+                }`}
+              >
+                {text.toUpperCase()}
+              </Link>
+            ))}
           </div>
         </div>
       </nav>

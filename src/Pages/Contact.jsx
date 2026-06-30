@@ -9,7 +9,7 @@ import 'animate.css';
 function Contact({ theme }) {
     return (
         <>
-            <Navbar theme={theme} url1={"/"} text1={"home"} url2={"/blogs"} text2={"blogs"} url3={"/projects"} text3={"projects"} url4={"/achievements"} text4={"achievements"}  />
+            <Navbar theme={theme} />
             <section className="text-gray-600 body-font relative" id="contact">
                 <div className="container px-5 py-24 mx-auto animate__animated animate__bounceInDown">
                     <div className="flex flex-col text-center w-full mb-12">

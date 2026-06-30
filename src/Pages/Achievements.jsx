@@ -19,7 +19,7 @@ const Achievements = ({theme}) => {
 
     return (
         <>
-            <Navbar theme={theme} url1={"/"} text1={"home"} url2={"/blogs"} text2={"blogs"} url3={"/projects"} text3={"projects"} url4={"/contact"} text4={"contact"}  />
+            <Navbar theme={theme} />
             <div className="mt-12">
                 <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">
                     ACHIVEMENTS:

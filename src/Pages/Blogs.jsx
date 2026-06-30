@@ -8,7 +8,7 @@ import blogsData from '../assets/blogs.json';
 function Blogs({ theme }) {
     return (
         <>
-            <Navbar theme={theme} url1={"/"} text1={"home"} url2={"/projects"} text2={"projects"} url3={"/achievements"} text3={"achievements"} url4={"/contact"} text4={"contact"} />
+            <Navbar theme={theme} />
 
             <section className="mt-12">
                 <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">BLOGS:</h1>
