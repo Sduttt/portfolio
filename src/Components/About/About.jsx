@@ -56,7 +56,7 @@ function About() {
         <div className="flex justify-around my-6">
           <Button
             text="Resume"
-            url="https://res.cloudinary.com/diytci0b8/image/upload/v1772973170/myPortfolio/Resume-fe_wdqjih.jpg"
+            url="/resume"
             className="mx-4"
           />
           <Button
