@@ -1,53 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useState, useEffect } from "react";
 import Blogcard from "../Components/Blogs/Blogcard";
-import axios from "axios";
 import 'animate.css'
-import buffering from '../assets/loading.gif';
 import Navbar from "../Components/Navbar/Navbar";
 import Footer from "../Components/Footer/Footer";
-
-const ARTICLE_QUERY = `
-query Publication {
-  publication(host: "sdutta.hashnode.dev") {
-    posts(first: 6) {
-      edges {
-        node {
-          title
-          brief
-          coverImage {
-            url
-          }
-          reactionCount
-          replyCount
-          slug
-          publishedAt
-        }
-      }
-    }
-  }
-}
-`;
+import blogsData from '../assets/blogs.json';
 
 function Blogs({ theme }) {
-    const [posts, setPosts] = useState([]);
-    const [loading, setLoading] = useState(true)
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const response = await axios.post('/api/hashnode-proxy', {
-                    query: ARTICLE_QUERY,
-                });
-                setPosts(response.data.data.publication.posts.edges);
-            } catch (error) {
-                console.error('Failed to load blog posts:', error);
-            } finally {
-                setLoading(false);
-            }
-        }
-        fetchData();
-    }, []);
-
     return (
         <>
             <Navbar theme={theme} url1={"/"} text1={"home"} url2={"/projects"} text2={"projects"} url3={"/achievements"} text3={"achievements"} url4={"/contact"} text4={"contact"} />
@@ -60,29 +18,21 @@ function Blogs({ theme }) {
                         Latest Articles:{" "}
                     </p>
                     <div className="flex flex-wrap justify-between">
-                        {loading ?
-                        (
-                            <div className="w-full flex justify-center">
-                                <img src={buffering} alt="buffering" />
-                            </div>
-                        ) : posts.map((edge) => {
-                            const post = edge.node;
+                        {blogsData.map((post) => {
                             const date = new Date(post.publishedAt);
                             return (
-                                <div className="md:w-1/3 flex justify-center my-2">
+                                <div key={post.slug} className="md:w-1/3 flex justify-center my-2">
                                 <Blogcard
-                                    key={post.slug}
                                     title={post.title}
                                     brief={post.brief}
-                                    img={post.coverImage.url}
-                                    reaction={post.reactionCount}
-                                    comment={post.replyCount}
+                                    img={post.coverImage}
+                                    reaction={0}
+                                    comment={0}
                                     date={date}
-                                    fullArticle={`https://sdutta.hashnode.dev/${post.slug}`}
+                                    fullArticle={post.fullArticle}
                                 />
                                 </div>
                             );
-                        
                         })}
                     </div>
                     <div className="flex justify-center">

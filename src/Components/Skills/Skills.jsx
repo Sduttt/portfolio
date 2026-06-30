@@ -11,6 +11,9 @@ import gohighlevel from './assets/highlevel.png'
 import sql from './assets/icons8-sql-60.png'
 import typescript from './assets/icons8-typescript-240.png'
 import loading from './assets/icons8-iphone-spinner.gif'
+import expo from './assets/expo.svg'
+import express from './assets/express.svg'
+import mongodb from './assets/mongodb.svg'
 import 'animate.css'
 
 
@@ -31,6 +34,9 @@ function Skills(){
                 <Skillicon img={gohighlevel} text="Go High Level" />
                 <Skillicon img={nodejs} text="Node.js" />
                 <Skillicon img={sql} text="SQL" />
+                <Skillicon img={expo} text="Expo" darkInvert />
+                <Skillicon img={express} text="Express.js" darkInvert />
+                <Skillicon img={mongodb} text="MongoDB" />
                 <Skillicon img={loading} text="" />
 
             </div>

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "I Built the App I Needed the Most as a Student — Introducing TutoFind",
+    "brief": "As a student—and later as a private tutor during my college days—I always felt the absence of something important. Not just a tool. Not just an app. A bridge. Let me explain. 🎓 The Problem I Faced as",
+    "coverImage": "https://cdn.hashnode.com/uploads/covers/62d3aa1e2f40e31decd8b85b/6101683a-ad55-43d9-a6f4-c4d4866b87bf.png",
+    "slug": "i-built-the-app-i-needed-the-most-as-a-student-introducing-tutofind",
+    "publishedAt": "2026-03-23T07:59:48.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/i-built-the-app-i-needed-the-most-as-a-student-introducing-tutofind"
+  },
+  {
+    "title": "Master the Art of Web Animation With JavaScript",
+    "brief": "Web animation has become an increasingly popular trend in the world of web development. It's a powerful tool that can enhance the user experience and make websites more engaging and dynamic.",
+    "coverImage": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/d2w-_1LJioQ/upload/b4d821f42e5a824dead0eaa0cc12c842.jpeg",
+    "slug": "master-the-art-of-web-animation-with-javascript",
+    "publishedAt": "2023-08-23T06:22:18.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/master-the-art-of-web-animation-with-javascript"
+  },
+  {
+    "title": "Big O Notation: A Beginner's Guide to Time Complexity",
+    "brief": "If you are new to Computer Science or programming, or if you have started learning Data-Structure and Algorithms, there is a high chance that you have been introduced to the term Big O Notation.",
+    "coverImage": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/BXOXnQ26B7o/upload/73b0d9a71d8e922196bdb1dc35b4c5f0.jpeg",
+    "slug": "big-o-notation-a-beginners-guide-to-time-complexity",
+    "publishedAt": "2023-03-29T15:09:20.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/big-o-notation-a-beginners-guide-to-time-complexity"
+  },
+  {
+    "title": "Linux Desktop Environments: A Detailed Analysis of GNOME, KDE, and Xfce",
+    "brief": "Linux is an open-source operating system with a diverse range of desktop environments to choose from. A desktop environment is a graphical user interface (GUI) that allows users to interact with the operating system.",
+    "coverImage": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/4Mw7nkQDByk/upload/5bb9be26f0356ecf0c534a1ecf49aa66.jpeg",
+    "slug": "gnome-vs-kde-vs-xfce",
+    "publishedAt": "2023-03-12T16:44:05.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/gnome-vs-kde-vs-xfce"
+  },
+  {
+    "title": "The Role of Inclusive Communities in Promoting Open Source and Diversity",
+    "brief": "Since my childhood, I have always believed that teamwork makes the dream work. Through online open-source communities, I witnessed the power of collective efforts from developers around the world.",
+    "coverImage": "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/LjqARJaJotc/upload/799acf4146a1d02046c58cb205837c75.jpeg",
+    "slug": "the-role-of-inclusive-communities-in-promoting-open-source-and-diversity",
+    "publishedAt": "2023-03-11T10:56:30.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/the-role-of-inclusive-communities-in-promoting-open-source-and-diversity"
+  },
+  {
+    "title": "React SEO: A Guide to Building SEO-Friendly React Web Apps",
+    "brief": "React is a leading JavaScript library for creating dynamic and engaging user interfaces. However, driving traffic to a React-based web app can be a challenge when it comes to search engine optimization (SEO).",
+    "coverImage": "https://cdn.hashnode.com/res/hashnode/image/upload/v1678293813698/4d911471-8f03-46ed-81b8-4680038ca093.webp",
+    "slug": "react-seo-a-guide-to-building-seo-friendly-react-web-apps",
+    "publishedAt": "2023-03-08T18:35:25.000Z",
+    "fullArticle": "https://sdutta.hashnode.dev/react-seo-a-guide-to-building-seo-friendly-react-web-apps"
+  }
+]

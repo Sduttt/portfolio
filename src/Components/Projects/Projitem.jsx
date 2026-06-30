@@ -16,14 +16,14 @@ function Projitem({ title, live, github, img, tech }) {
           <a href={live} target="_blank" rel="noreferrer" className="inline-block">
             <button
               type="button"
-              className="px-3 py-1 border-2 dark:border-gray-200 border-gray-800 dark:hover:bg-gray-200 hover:bg-gray-800 dark:text-gray-200 font-bold text-xs leading-tight uppercase rounded-full dark:hover:text-gray-900 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              className="px-3 py-1 border-2 dark:border-gray-200 border-gray-800 dark:hover:bg-gray-200 hover:bg-gray-800 dark:text-gray-200 font-bold text-xs leading-tight uppercase rounded-full dark:hover:text-gray-900 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out cursor-pointer">
               Live
             </button>
           </a>
           <a href={github} target="_blank" rel="noreferrer" className="inline-block">
             <button
               type="button"
-              className="px-3 py-1 border-2 dark:border-gray-200 border-gray-800 dark:hover:bg-gray-200 hover:bg-gray-800 dark:text-gray-200 font-bold text-xs leading-tight uppercase rounded-full dark:hover:text-gray-900 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              className="px-3 py-1 border-2 dark:border-gray-200 border-gray-800 dark:hover:bg-gray-200 hover:bg-gray-800 dark:text-gray-200 font-bold text-xs leading-tight uppercase rounded-full dark:hover:text-gray-900 hover:text-gray-200 focus:outline-none focus:ring-0 transition duration-150 ease-in-out cursor-pointer">
               Code
             </button>
           </a>

@@ -3,10 +3,17 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
+    title: "Full Stack React Native Developer",
+    org: "Kalkey",
+    start: "June 2026",
+    end: "Present",
+    desc: "Building full stack applications using React Native, Expo, Express.js, Node.js, MongoDB and Tailwind CSS.",
+  },
+  {
     title: "Associate Product Configurator",
     org: "Inadev India Pvt Ltd",
     start: "Jan 2025",
-    end: "Present",
+    end: "June 2026",
     desc: "Configured web and cross-platform applications using Inadev's low-code platform, enabling rapid development and deployment of customized solutions for clients across various industries.",
   },
   {
