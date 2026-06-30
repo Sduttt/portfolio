@@ -37,7 +37,7 @@ export default function Timeline() {
     <section className="py-12">
       <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn mb-10">EXPERIENCES :</h1>
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 sm:px-4">
         {/* Grid layout:
             - small screens: 2 columns (line on left, content on right)
             - md and up: 3 columns (left card, center line, right card)
@@ -83,10 +83,10 @@ export default function Timeline() {
 
                 {/* Small screen: dot on left and card on right (card width 80%) */}
                 <div className="md:hidden col-span-2 mt-4 flex items-start">
-                  <div className="w-12 flex z-10 -ml-1.75 justify-center">
+                  <div className="w-10 flex z-10 -ml-2 justify-center">
                     <div className="w-4 h-4 rounded-full bg-blue-500 border-2 border-white shadow-md mt-2"></div>
                   </div>
-                  <div className="pl-2 w-4/5">
+                  <div className="pl-2 flex-1 min-w-0">
                     <ExperienceCard {...exp} />
                   </div>
                 </div>

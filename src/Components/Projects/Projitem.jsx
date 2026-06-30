@@ -3,7 +3,7 @@ import 'animate.css'
 
 function Projitem({ title, live, github, img, tech }) {
   return (
-    <div className="w-80 sm:w-96 h-80 m-2 rounded-md shadow-md bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-800 dark:text-gray-50 text-gray-800 animate__animated animate__flipInY flex flex-col overflow-hidden">
+    <div className="w-full max-w-xs sm:w-80 md:w-96 h-80 m-2 rounded-md shadow-md bg-zinc-200 dark:bg-zinc-700 hover:bg-zinc-300 dark:hover:bg-zinc-800 dark:text-gray-50 text-gray-800 animate__animated animate__flipInY flex flex-col overflow-hidden">
       <div className="h-48 sm:h-52 w-full bg-gray-100 dark:bg-gray-600 flex items-center justify-center">
         <img src={img} alt="" className="object-contain w-full h-full p-3"/>
       </div>

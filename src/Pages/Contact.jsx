@@ -31,7 +31,7 @@ function Contact({ theme }) {
                             netlify
                             netlify-honeypot="bot-field">
                             <input type="hidden" name="form-name" value="contact" />
-                            <div className="p-2 w-1/2">
+                            <div className="p-2 w-full sm:w-1/2">
                                 <div className="relative">
                                     <label
                                         htmlFor="name"
@@ -46,7 +46,7 @@ function Contact({ theme }) {
                                     />
                                 </div>
                             </div>
-                            <div className="p-2 w-1/2">
+                            <div className="p-2 w-full sm:w-1/2">
                                 <div className="relative">
                                     <label
                                         htmlFor="email"

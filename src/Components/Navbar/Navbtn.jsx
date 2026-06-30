@@ -19,9 +19,9 @@ function Navbtn({ text, url, isActive }) {
       before:transition
       before:ease-in-out
       before:duration-300
-      font-bold sm:font-extrabold
-      mx-1 sm:mx-2 md:mx-4
-      sm:text-sm md:text-lg
+      font-bold sm:font-semibold md:font-extrabold
+      mx-0.5 sm:mx-1 md:mx-3
+      text-xs sm:text-xs md:text-sm lg:text-base
       dark:text-[#F5F5F5]
       ${isActive
         ? 'before:scale-x-100 before:origin-top-left'

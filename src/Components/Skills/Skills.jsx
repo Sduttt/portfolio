@@ -21,7 +21,7 @@ function Skills(){
     return(
         <div className="my-6">
             <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">SKILLS :</h1>
-            <div className="flex justify-center flex-wrap  mx-4">
+            <div className="flex justify-center flex-wrap mx-2 sm:mx-4 px-2">
              
                 <Skillicon img={git} text="Git" />
                 <Skillicon img={js} text="JavaScript" />

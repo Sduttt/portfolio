@@ -6,8 +6,8 @@ import 'animate.css';
 // eslint-disable-next-line react/prop-types
 function Blogcard({title, brief, img, fullArticle, reaction, comment, date}) {
   return (
-    <div className="p-3 md:w-[500px] animate__animated animate__flipInY">
-      <div className="group h-full rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700 hover:shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px] hover:bg-zinc-300 transition-all duration-300 ease-in-out">
+    <div className="p-3 w-full sm:w-[480px] animate__animated animate__flipInY">
+      <div className="group h-full rounded-lg overflow-hidden bg-zinc-200 dark:bg-zinc-700 hover:shadow-[rgba(0,0,0,0.25)_0px_25px_50px_-12px] hover:bg-zinc-300 transition-all duration-300 ease-in-out">
         <img
           className="md:h-56 w-full object-cover object-center"
           src={img}

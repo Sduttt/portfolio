@@ -28,7 +28,7 @@ function Navbar({ theme }) {
   return (
     <>
       {/* Desktop nav */}
-      <nav className="hidden sm:flex mx-2 sm:mx-6 font-nav justify-between items-center">
+      <nav className="hidden sm:flex mx-2 sm:mx-3 md:mx-6 font-nav justify-between items-center">
         <div className="flex basis-2/5 justify-start">
           {NAV_ITEMS.slice(0, 3).map(({ url, text }) => (
             <Navbtn
@@ -72,7 +72,7 @@ function Navbar({ theme }) {
 
         <div className="relative">
           <button
-            className="block p-1 text-3xl dark:text-white bg-transparent rounded-md -mt-6.25"
+            className="block p-1 text-3xl dark:text-white bg-transparent rounded-md -mt-6"
             onClick={handleClick}
           >
             <CgMenuRight />

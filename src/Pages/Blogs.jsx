@@ -12,16 +12,16 @@ function Blogs({ theme }) {
 
             <section className="mt-12">
                 <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">BLOGS:</h1>
-                <p className="my-2 text-xl text-center text-gray-600 dark:text-gray-300">These are my latest articles. You can visit my <a href="https://sdutta.hashnode.dev/" className="underline">Hashnode</a> profile to get all articles.</p>
+                <p className="my-2 text-base sm:text-xl text-center px-4 text-gray-600 dark:text-gray-300">These are my latest articles. You can visit my <a href="https://sdutta.hashnode.dev/" className="underline">Hashnode</a> profile to get all articles.</p>
                 <div className=" px-5 py-4 mx-auto">
                     <p className="text-center font-bold text-xl text-[#172C45] dark:text-gray-300 ">
                         Latest Articles:{" "}
                     </p>
-                    <div className="flex flex-wrap justify-between">
+                    <div className="flex flex-wrap justify-center">
                         {blogsData.map((post) => {
                             const date = new Date(post.publishedAt);
                             return (
-                                <div key={post.slug} className="md:w-1/3 flex justify-center my-2">
+                                <div key={post.slug} className="w-full sm:w-1/2 md:w-1/3 flex justify-center my-2">
                                 <Blogcard
                                     title={post.title}
                                     brief={post.brief}

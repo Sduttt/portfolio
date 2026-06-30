@@ -13,7 +13,7 @@ function Projects({theme}){
         <div className='mt-12'>
             <h1 className="text-center font-zen text-3xl bold dark:text-white animate__animated animate__bounceIn">PROJECTS:</h1>
             <p className="my-2 text-xl text-center text-gray-600 dark:text-gray-300">These are the list of my top favourite projects. Visit my <a href="https://github.com/Sduttt" className="underline">GitHub</a> profile to view all projects.</p>
-            <div className="flex flex-wrap m-2 mt-6 justify-center">
+            <div className="flex flex-wrap px-4 mt-6 justify-center">
                 {
                     Projectlist.map((x) => {
                         return(

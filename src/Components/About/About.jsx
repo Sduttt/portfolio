@@ -8,9 +8,9 @@ import 'animate.css';
 
 function About() {
   return (
-    <div className="flex justify-around my-6 items-center flex-col sm:flex-row dark:text-white">
-      <img src={Photo} alt="dp" className="w-64 sm:w-80 animate__animated animate__fadeInLeft" />
-      <section className="py-12 sm:mr-14 text-center animate__animated animate__fadeInRight">
+    <div className="flex justify-around my-6 px-4 items-center flex-col sm:flex-row dark:text-white">
+      <img src={Photo} alt="dp" className="w-48 sm:w-64 md:w-80 max-w-full animate__animated animate__fadeInLeft" />
+      <section className="py-8 sm:py-12 sm:mr-8 md:mr-14 text-center animate__animated animate__fadeInRight w-full sm:w-auto">
         <h1 className="font-zen text-3xl bold my-4">SUBHAM DUTTA</h1>
         <h2 className="font-zen text-base text-center semibold">
           FULL-STACK &nbsp; DEVELOPER
